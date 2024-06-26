@@ -4,6 +4,7 @@ import Addnewspaper from './components/Addnewspaper';
 import SearchNewspaper from './components/SearchNewspaper';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ViewSubscriberpage from './components/ViewSubscriberpage';
+import DeleteNewspaper from './components/DeleteNewspaper';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/"element={<Addnewspaper/>}/>
       <Route path="/view"element={<ViewSubscriberpage/>}/>
       <Route path="/search"element={<SearchNewspaper/>}/>
+      <Route path="/delete"element={<DeleteNewspaper/>}/>
     </Routes>
     </BrowserRouter>
   );
